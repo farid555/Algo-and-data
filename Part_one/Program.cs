@@ -13,7 +13,9 @@ using System;
                
                //Tables t = new Tables();
               // Console.WriteLine(t.Calculate(new int[] {1,2,3,2})); // 18
-
+                
+                 LuckyNumbers luck = new LuckyNumbers();
+                 Console.WriteLine(luck.Calculate(10,100));
 
              }
          }      
