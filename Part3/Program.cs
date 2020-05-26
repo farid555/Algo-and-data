@@ -9,8 +9,10 @@ namespace part3
     
         
   class Program
-  {
-    public static int[] Randomizer(int n)
+  { 
+      static void Main(string[] args)
+      {
+    /*public static int[] Randomizer(int n)
     {
       Random random = new Random();
       int[] arr = new int[n];
@@ -28,9 +30,14 @@ namespace part3
        Console.WriteLine(s.Calculate(new int[] { 4, 1, 8, 5 })); // 1
        Console.WriteLine(s.Calculate(new int[] { 1, 10, 100 })); // 9
        Console.WriteLine(s.Calculate(new int[] { 1, 1, 1, 1, 1 })); // 0
-       Console.WriteLine(s.Calculate(Randomizer(11))); // depends on random
+       Console.WriteLine(s.Calculate(Randomizer(11))); // depends on random */
 
-      
+      Inversions inv = new Inversions();
+            int[] t = inv.Create(5, 2);
+            foreach (int i in t)
+            {
+                Console.Write(i + " ");  // 2 1 3 5 4
+            }
 
       
 
