@@ -1,7 +1,8 @@
 ## Exercise_01
 
 1. Is the graph connected?
-Ans: Both
+ 
+   Ans: Both
 
 2. Is there a path from node *a* to node *b*?
 
