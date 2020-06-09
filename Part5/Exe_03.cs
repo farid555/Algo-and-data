@@ -23,6 +23,11 @@ namespace Part5
             this.graph[a].Add(b);
             this.graph[b].Add(a);
         }
+
+        // Found this way of having a helper method on the internet
+        // on the site geeksforgeeks.org/connected-components-in-an-undirected-graph/
+        // used this method to get the Calculate method to work!
+        
         public void DFS(int v, bool[] visited)
         {
             visited[v-1] = true;
