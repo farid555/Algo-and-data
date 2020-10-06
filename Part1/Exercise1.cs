@@ -1,5 +1,5 @@
 using System;
-namespace part1
+namespace Part1
 
 {
     public class Numbers
@@ -9,7 +9,8 @@ namespace part1
             x = Math.Abs(x);
             int sum = 0;
 
-            while(x != 0){
+            while (x != 0)
+            {
 
                 sum += x % 10;  //sum = sum + x % 10
                 x /= 10; // x = x/10

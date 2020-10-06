@@ -1,11 +1,11 @@
 using System;
 
-namespace part1
+namespace Part1
 
 {
     public class Substrings
     {
-        public int Calculate (string a, string b)
+        public int Calculate(string a, string b)
         {
             int m = b.Length;
             int n = a.Length;
@@ -13,12 +13,12 @@ namespace part1
             for (int i = 0; i <= n - m; i++)
             {
                 int j;
-                for( j = 0; j < m; j++)
+                for (j = 0; j < m; j++)
                 {
-                    if (a[i+j] != b[j])
+                    if (a[i + j] != b[j])
                     {
                         break;
-                    } 
+                    }
                 }
                 if (j == m)
                 {

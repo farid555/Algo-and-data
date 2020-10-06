@@ -1,12 +1,12 @@
-using System;
+/*using System;
 using System.Collections.Generic;
-namespace part1
+namespace Part1
 
 {
     public class LuckyNumbers
     {
 
-        
+
         /*First step is to break the whole sequence 3,7,33,37,73,77,... into 2 smaller sub-sequences:
         3,33,37,333,337,373,377,... and 7,73,77,733,737,773,777,...  Looking closer at these sub-sequneces
         one see that there is a pattern in them. 3*10 + 3 = 33, 3*10 + 7 = 37, 33*10 + 3 = 333, 33*10 + 7 = 337,
@@ -44,13 +44,13 @@ namespace part1
         I was thinking of doing this with a while-loop. Now the tricky part is getting the recursion formula
         into the while-loop. the program should add 1 (luckyNumbers++;) each time the loop hit a value on the 
         recursion formula. And that way the luckynumbers are counted in an interval.
-        */
+       
         public int CalculateLuckyNumbers(int a, int b)
         {
             List<int> alucNumbers = new List<int>();   // luckynumber list for (1,a)
             List<int> blucNumbers = new List<int>();   // luckynumber list for (1,b)
 
-             // did not understand this part where the .Add(3) and .Add(7) should have been added.
+            // did not understand this part where the .Add(3) and .Add(7) should have been added.
 
             if (a < 3 && b < 3)
             {
@@ -61,7 +61,7 @@ namespace part1
                 return 1;
             }
 
-            if (a >=3 && b <= 7)
+            if (a >= 3 && b <= 7)
             {
                 return 2;
             }
@@ -71,48 +71,48 @@ namespace part1
             blucNumbers.Add(7);
 
             // doing the while-loop first for interval(1,a)
-            
+
             int i = 0;
             while (true)
             {
-                 // i = 0 gives 10*0 + 3 = 3, i+1 gives 10*3 + 3 = 33, i+2 gives 10*3 + 7 = 37,...
+                // i = 0 gives 10*0 + 3 = 3, i+1 gives 10*3 + 3 = 33, i+2 gives 10*3 + 7 = 37,...
 
                 i + 1 = 10 * i + 3;
                 i + 2 = 10 * i + 7;
 
-                 // breaking the loop if i+1 term or i+2 term is too big
+                // breaking the loop if i+1 term or i+2 term is too big
 
                 if (i + 1 > a)
                 {
                     break;
                 }
-                if(i + 2 > a)
+                if (i + 2 > a)
                 {
                     break;
                 }
-                 // adding the luckynumbers to the list 33 and 37 to the list.
+                // adding the luckynumbers to the list 33 and 37 to the list.
 
                 alucNumbers.Add(i + 1);
                 alucNumbers.Add(i + 2);
 
                 i++;
             }
-              // return the counts of the luckynumbers in interval(1,a)
+            // return the counts of the luckynumbers in interval(1,a)
             return alucNumbers.Count;
 
             // doing the same while-loop for interval (1,b)
 
             int j = 0;
-            while(true)
+            while (true)
             {
 
                 // j = 0 gives 10*0 + 3 = 3, j+1 gives 10*3 + 3 = 33, j+2 gives 10*3 + 7 = 37,...
                 j + 1 = 10 * i + 3;
                 j + 2 = 10 * i + 7;
 
-                 // breaking the loop if i+1 term or i+2 term is too big
+                // breaking the loop if i+1 term or i+2 term is too big
 
-                if(j + 1 > b)
+                if (j + 1 > b)
                 {
                     break;
                 }
@@ -121,14 +121,14 @@ namespace part1
                     break;
                 }
 
-                 // adding the luckynumbers to the list 33 and 37 to the list.
+                // adding the luckynumbers to the list 33 and 37 to the list.
 
                 blucNumbers.Add(j + 1);
                 blucNumbers.Add(j + 2);
                 j++;
             }
 
-             // return the counts of luckynumbers in interval (1,b)
+            // return the counts of luckynumbers in interval (1,b)
             return blucNumbers.Count;
 
         }
@@ -141,3 +141,4 @@ namespace part1
         }
     }
 }
+*/
